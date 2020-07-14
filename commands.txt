@@ -1,0 +1,228 @@
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash
+$ git version
+git version 2.27.0.windows.1
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash
+$ git init
+Initialized empty Git repository in D:/Assignment 2020 Dotnet/Assignment 1 Git Bash/.git/
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git config --global user.name "Rajani Joshi"
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git config --global user.email "rajani.joshi@zensar.com"
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git config --edit --global
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ code README.md
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ gir status
+bash: gir: command not found
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ code instruction.txt
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git add .
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git commit -m "Create README and instruction file in master branch"
+[master (root-commit) f4e65af] Create README and instruction file in master branch
+ 2 files changed, 12 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 instruction.txt
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git log
+commit f4e65afd6e022099c5e2309aa22ac6b8c3546def (HEAD -> master)
+Author: Rajani Joshi <rajani.joshi@zensar.com>
+Date:   Tue Jul 14 20:33:43 2020 +0530
+
+    Create README and instruction file in master branch
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ gir log --oneline
+bash: gir: command not found
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git log --oneline
+f4e65af (HEAD -> master) Create README and instruction file in master branch
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ code index.html
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git add .
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git commit -m "An index.html file is added in master branch"
+[master 160743f] An index.html file is added in master branch
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ ls
+index.html  instruction.txt  README.md
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git remote add origin https://github.com/Dotnet-Jul-2020/Day1-assignment.git
+fatal: remote origin already exists.
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git remote set-url origin https://github.com/Dotnet-Jul-2020/Day1-assignment.git
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.06 KiB | 1.06 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Dotnet-Jul-2020/Day1-assignment.git
+ * [new branch]      master -> master
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git pull https://github.com/Dotnet-Jul-2020/Day1-assignment.git               remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 750 bytes | 32.00 KiB/s, done.
+From https://github.com/Dotnet-Jul-2020/Day1-assignment
+ * branch            HEAD       -> FETCH_HEAD
+Updating 160743f..2891f94
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git checkout master
+Already on 'master'
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git checkout -b feature
+Switched to a new branch 'feature'
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ git branch
+* feature
+  master
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ code index.css
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ git add .
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ git commit -m "Add new css file to feature branch"
+[feature 0cdb759] Add new css file to feature branch
+ 1 file changed, 7 insertions(+)
+ create mode 100644 index.css
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ ls
+index.css  index.html  instruction.txt  README.md
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ code index.html
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ git branch test-branch
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (feature)
+$ git checkout master
+Switched to branch 'master'
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git checkout -b test-branch
+fatal: A branch named 'test-branch' already exists.
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git checkout test-branch
+Switched to branch 'test-branch'
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (test-branch)
+$ code file.txt
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (test-branch)
+$ git add .
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (test-branch)
+$ get commit -m "New file file.txt is add to test-branch"
+bash: get: command not found
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (test-branch)
+$ git commit -m "New file file.txt is add to test-branch"
+[test-branch 01b3939] New file file.txt is add to test-branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file.txt
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (test-branch)
+$ git checkout master
+Switched to branch 'master'
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ ls
+index.html  instruction.txt  README.md
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git merge test-branch
+Updating 2891f94..01b3939
+Fast-forward
+ file.txt  | 1 +
+ index.css | 7 +++++++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 file.txt
+ create mode 100644 index.css
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ ls
+file.txt  index.css  index.html  instruction.txt  README.md
+
+Rajni@DESKTOP-0K0H855 MINGW64 /d/Assignment 2020 Dotnet/Assignment 1 Git Bash (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 713 bytes | 356.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Dotnet-Jul-2020/Day1-assignment.git
+   2891f94..01b3939  master -> master
