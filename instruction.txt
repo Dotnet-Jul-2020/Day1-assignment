@@ -1,0 +1,5 @@
+Here are some commands for using Git Bash
+git version - To check the version of your Git
+git init - To create the repository
+git config --global user.name "Username" - To configure your username in git 
+git config --global user.email "Email address" - For configuring your email 
